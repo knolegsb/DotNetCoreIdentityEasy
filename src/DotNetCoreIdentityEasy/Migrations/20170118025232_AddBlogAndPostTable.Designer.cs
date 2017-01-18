@@ -8,9 +8,10 @@ using DotNetCoreIdentityEasy.Data;
 namespace DotNetCoreIdentityEasy.Migrations
 {
     [DbContext(typeof(MyIdentityDbContext))]
-    partial class MyIdentityDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170118025232_AddBlogAndPostTable")]
+    partial class AddBlogAndPostTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")

@@ -1,4 +1,5 @@
 ﻿using DotNetCoreIdentityEasy.Models;
+using DotNetCoreIdentityEasy.Models.BlogModel;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -14,5 +15,8 @@ namespace DotNetCoreIdentityEasy.Data
         {
             //nothing here
         }
+
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Post> Posts { get; set; }
     }
 }
